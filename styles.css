@@ -1,0 +1,97 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-block:50px;
+    background: rgba(46, 196, 182, 0.04);
+
+  }
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    width:85%;
+    /* border: solid red; */
+}
+  
+.box{
+   /* margin-top: 100px;
+   margin-left: 70px; */
+   width:50% ;
+}
+
+  .form-container {
+      /* width: 500px;
+      height: 500px;
+      position: absolute;
+      top: 30px;
+      right:100px; */
+      width:50%;
+      background-color: #fff;
+      padding: 40px;
+      /* box-sizing: border-box; */
+  }
+  
+  .basic-info{
+    display: flex;
+  }
+
+  .basic-info div {
+    flex: 1;
+    margin-right: 20px;
+  }
+
+  label {
+    margin-bottom: 2px;
+    color: #333;
+  }
+
+  input,
+select {
+    background-color: transparent;
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  outline: none;
+}
+
+input:focus, select:focus{
+    border: 1px solid #2EC4B6;
+}
+
+input[type="submit"] {
+    background-color: #2EC4B6;
+    /* Set your desired submit button color */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  @media screen and (max-width: 900px){
+    .wrapper{
+        flex-direction: column;
+   }
+ 
+   .box {
+        width: 100%;
+    }
+ 
+    .form-container {
+        width: 100%;
+     }
+ }
+
+  
+  
